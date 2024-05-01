@@ -6,10 +6,11 @@ Aplikasi yang didalamnya terdapat beberapa doa dan wadah untuk curhat kesehatan 
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/dd64f36e-4b22-4d7e-bc41-8fd57c5f00e6)
 
 # Contoh Penerapan SQFLITE 
-![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/40b4ccbf-8db1-4808-92d1-3f2c269081eb)
+![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/beae81d1-4bc3-4b07-875c-acad2ba0ce6e)
+
 
 # Contoh Penerapan Dark Mode
-![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/ed0e3f36-17cf-4f3b-9780-a2f66079b838)
+![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/40b4ccbf-8db1-4808-92d1-3f2c269081eb)
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/e5a7a3cd-ddbe-4e40-a47e-a43506a0f66a)
 
 # Firebase
@@ -31,4 +32,3 @@ Aplikasi yang didalamnya terdapat beberapa doa dan wadah untuk curhat kesehatan 
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/f4a1a56c-7469-4133-913b-f77796b1c6d7)
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/da253926-67b5-49e1-84cc-d88f1251d830)
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/8bc2bd61-fce9-4032-95dd-38b9061e6a8b)
-![Uploading image.png…]()
