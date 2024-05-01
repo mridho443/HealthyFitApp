@@ -18,6 +18,7 @@ Aplikasi yang didalamnya terdapat beberapa doa dan wadah untuk curhat kesehatan 
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/7452e765-4a0e-4f57-afdb-26a32791b493)
 
 # View
+![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/e5a7a3cd-ddbe-4e40-a47e-a43506a0f66a)
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/792391ec-97a7-4676-b40a-c36cb50a5a25)
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/59d6161f-9317-4912-aefb-a13133c29d8b)
 ![image](https://github.com/mridho443/HealthyFitApp/assets/101929979/0ae8b1d3-7b22-4e6a-9bcf-6bc3fdaa7745)
