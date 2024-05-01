@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "977815128634",
+    "project_id": "healthyfit-bf235",
+    "storage_bucket": "healthyfit-bf235.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977815128634:android:d446693e028bd63c228303",
+        "android_client_info": {
+          "package_name": "com.example.healthyfitapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA68JumUaZe_rrM0uhn8KWvnZvLFGYmURg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977815128634:android:0c71dd55e467ef01228303",
+        "android_client_info": {
+          "package_name": "com.example.uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA68JumUaZe_rrM0uhn8KWvnZvLFGYmURg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
