@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:healthyfitapp/pages/before_doa.dart';
 import 'package:healthyfitapp/services/favdb.dart';
-import 'package:healthyfitapp/shared/text_style.dart'; // Import kelas CustomTextStyle
+import 'package:healthyfitapp/shared/text_style.dart';
 
 class FavoritePage extends StatefulWidget {
   const FavoritePage({Key? key}) : super(key: key);
@@ -12,7 +12,6 @@ class FavoritePage extends StatefulWidget {
 }
 
 class _FavoritePageState extends State<FavoritePage> {
-  // Buat variabel untuk menyimpan status loading dan data doa
   bool _isLoading = true;
   late List<Map<String, dynamic>> _doaList;
   List<String> fotos = [
@@ -23,19 +22,18 @@ class _FavoritePageState extends State<FavoritePage> {
   @override
   void initState() {
     super.initState();
-    _refreshDoaList(); // Panggil metode untuk mengambil data doa
+    _refreshDoaList();
   }
 
-  // Metode untuk mengambil data doa dari database favorit
   Future<void> _refreshDoaList() async {
     setState(() {
-      _isLoading = true; // Set loading menjadi true
+      _isLoading = true;
     });
-    // Panggil metode untuk mengambil data dari SQLite
+
     List<Map<String, dynamic>> data = await SQLHelper.getItems();
     setState(() {
-      _doaList = data; // Simpan data doa ke variabel lokal
-      _isLoading = false; // Set loading menjadi false
+      _doaList = data;
+      _isLoading = false;
     });
   }
 
@@ -69,7 +67,7 @@ class _FavoritePageState extends State<FavoritePage> {
               ),
               _isLoading
                   ? Center(child: CircularProgressIndicator())
-                  : _buildDoaList(), // Tampilkan data doa
+                  : _buildDoaList(),
             ],
           ),
         ),
@@ -77,7 +75,6 @@ class _FavoritePageState extends State<FavoritePage> {
     );
   }
 
-  // Widget untuk menampilkan daftar doa
   Widget _buildDoaList() {
     int randomIndex = Random().nextInt(fotos.length);
     return ListView.builder(
@@ -162,11 +159,10 @@ class _FavoritePageState extends State<FavoritePage> {
                     ),
                     IconButton(
                       onPressed: () {
-                        _deleteItem(
-                            data); // Panggil metode untuk menghapus item
+                        _deleteItem(data);
                       },
                       icon: Icon(Icons.delete),
-                      color: Colors.red, // Atur warna sesuai keinginan Anda
+                      color: Colors.red,
                     ),
                   ],
                 ),
@@ -178,11 +174,8 @@ class _FavoritePageState extends State<FavoritePage> {
     );
   }
 
-  // Metode untuk menghapus item dari favorit
   Future<void> _deleteItem(Map<String, dynamic> data) async {
-    // Hapus data dari SQLite
     await SQLHelper.deleteItem(data['id']);
-    // Refresh halaman untuk memperbarui tampilan
     _refreshDoaList();
   }
 }
