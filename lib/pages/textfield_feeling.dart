@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthyfitapp/services/database.dart';
+import 'package:healthyfitapp/services/localnotif.dart';
 import 'package:healthyfitapp/shared/text_style.dart';
 
 class TextFieldFeeling extends StatelessWidget {
@@ -150,6 +151,10 @@ class TextFieldFeeling extends StatelessWidget {
                             feelingDetail: _feelingController.text,
                             kategori: feelingNKategori[1],
                           );
+                          LocalNotif.showNotification(
+                              title: "Curhatan Anda Telah Terkirim",
+                              body: "Dengan Kategori ${feelingNKategori[1]}",
+                              payload: "tespayload");
                           Navigator.of(context).pop();
                         },
                         style: ElevatedButton.styleFrom(

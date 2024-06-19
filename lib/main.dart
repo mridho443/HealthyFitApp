@@ -9,6 +9,8 @@ import 'package:healthyfitapp/pages/favorite_page.dart';
 import 'package:healthyfitapp/pages/feeling.dart';
 import 'package:healthyfitapp/pages/saran_doa.dart';
 import 'package:healthyfitapp/pages/textfield_feeling.dart';
+import 'package:healthyfitapp/services/localnotif.dart';
+import 'package:healthyfitapp/services/notif_firebase.dart';
 import 'package:healthyfitapp/services/theme_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:healthyfitapp/firebase_options.dart';
@@ -19,6 +21,9 @@ import 'package:healthyfitapp/services/auth.dart';
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
+  await NotifFirebase().initNotifications();
+  await LocalNotif.init();
 
   runApp(ChangeNotifierProvider(
     create: (context) => ThemeProvider(),
