@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthyfitapp/pages/curhat_with_ai.dart';
 import 'package:healthyfitapp/pages/profile.dart';
 import 'package:healthyfitapp/services/theme_provider.dart';
 import 'package:healthyfitapp/shared/text_style.dart';
@@ -908,55 +909,60 @@ class RowFitur extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 16),
-        SizedBox(
-          height: 86,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: 64,
-                height: 64,
-                decoration: ShapeDecoration(
-                  color: const Color(0xFF1D5C9B),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(64),
+        InkWell(
+          onTap: () {
+            Navigator.of(context).pushNamed("/CurhatWithAI");
+          },
+          child: SizedBox(
+            height: 86,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 64,
+                  height: 64,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF1D5C9B),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(64),
+                    ),
                   ),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 36,
-                      height: 36,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("images/Chat Bubble.png"),
-                          fit: BoxFit.contain,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 36,
+                        height: 36,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage("images/Chat Bubble.png"),
+                            fit: BoxFit.contain,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-              Container(
-                height: 2,
-              ),
-              const Text(
-                'Forum',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 11,
-                  fontFamily: 'Plus Jakarta Sans',
-                  fontWeight: FontWeight.w500,
-                  letterSpacing: -0.41,
+                Container(
+                  height: 2,
                 ),
-              ),
-            ],
+                const Text(
+                  'Curhat With AI',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 11,
+                    fontFamily: 'Plus Jakarta Sans',
+                    fontWeight: FontWeight.w500,
+          
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
         const SizedBox(width: 16),

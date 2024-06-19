@@ -5,6 +5,7 @@ import 'package:healthyfitapp/model/myuser_model.dart';
 import 'package:healthyfitapp/pages/admin_feeling.dart';
 import 'package:healthyfitapp/pages/admin_saran_doa.dart';
 import 'package:healthyfitapp/pages/authentication/splash_screen.dart';
+import 'package:healthyfitapp/pages/curhat_with_ai.dart';
 import 'package:healthyfitapp/pages/favorite_page.dart';
 import 'package:healthyfitapp/pages/feeling.dart';
 import 'package:healthyfitapp/pages/saran_doa.dart';
@@ -66,6 +67,7 @@ class Main extends StatelessWidget {
           '/AdminSaranDoa': (context) => AdminSaranDoa(),
           '/AdminFeeling': (context) => AdminFeeling(),
           '/FavoritePage': (context) => FavoritePage(),
+          '/CurhatWithAI': (context) => CurhatWithAI(),
         },
       ),
     );
